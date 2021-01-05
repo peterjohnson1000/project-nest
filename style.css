@@ -31,7 +31,7 @@ a {
   height: 0;
   min-height: 35px;
   overflow: hidden;
-  background-color: white;
+  background: transparent;
 }
 
 .nav-brand {
@@ -64,11 +64,10 @@ a {
 
 /*--------------Hero Section----------------*/
 .hero-title {
-  background: url(./images/Background-image.png);
+  background: url(./images/Background\ image\ main.jpg);
   background-size: cover;
   height: 900px;
   color: white;
-  padding-top: 100px;
 }
 .hero-title h3,
 h1 {
@@ -96,7 +95,7 @@ h1 {
   padding: 15px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: 20px;
+  margin-top: 5px;
   justify-content: center;
   transition: 0.5s ease;
 }
@@ -105,10 +104,14 @@ h1 {
   background-color: white;
   color: black;
 }
+.resort-name-two {
+  color: white;
+  font-family: "Sacramento", cursive;
+}
 
 .fog {
   position: relative;
-  height: 80vh;
+  height: 75vh;
   width: 100%;
   background: transparent;
 }
