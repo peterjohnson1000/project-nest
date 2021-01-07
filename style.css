@@ -5,6 +5,7 @@ body {
   margin: 0%;
   box-sizing: border-box;
   overflow-x: hidden;
+  background-color: black;
 }
 /*--------------Global Declarations----------------*/
 .flex-row {
@@ -171,7 +172,6 @@ h1 {
 
 /*--------------Facilities Section----------------*/
 .facility-box {
-  background-color: black;
   height: 900px;
 }
 .cards {
@@ -212,8 +212,8 @@ h1 {
 
 /*--------------Reservation Section----------------*/
 .reserve {
-  background-color: black;
   height: 900px;
+  position: relative;
 }
 .reserve-heading h2 {
   color: white;
@@ -224,10 +224,43 @@ h1 {
 }
 .reserve-data {
   height: 500px;
-  width: 1200px;
+  width: 400px;
   border: 2px solid white;
   margin: 0 auto;
   border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  background-color: white;
+}
+.text-field {
+  margin-top: 25px;
+  padding: 10px 10px;
+  padding-right: 200px;
+  border: 2px solid crimson;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+}
+.room-type {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.room {
+  margin-right: 50px;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 2px solid crimson;
+  font-size: 15px;
+}
+.number-of-rooms {
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 2px solid crimson;
+  font-size: 15px;
 }
 /*--------------End of Reservation Section----------------*/
 
