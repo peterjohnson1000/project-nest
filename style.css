@@ -6,6 +6,7 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   background-color: black;
+  scroll-behavior: smooth;
 }
 /*--------------Global Declarations----------------*/
 .flex-row {
@@ -185,6 +186,10 @@ h1 {
   background-color: white;
   border: 5px solid crimson;
   float: left;
+  transition: 0.5s ease;
+}
+.cards:hover {
+  border: 5px solid greenyellow;
 }
 .card-image {
   grid-area: image;
@@ -280,12 +285,50 @@ h1 {
   border: 2px solid crimson;
   padding: 2px 5px;
 }
-.submit-now {
+.sumbit-button {
   display: flex;
   justify-content: center;
+}
+.submit-now {
   margin-top: 25px;
+  border: 2px solid crimson;
+  border-radius: 50px;
+  padding: 5px 10px;
+  transition: 0.2s ease;
+}
+.sumbit-button :hover {
+  background-color: crimson;
+  color: white;
 }
 /*--------------End of Reservation Section----------------*/
+
+/*------------------Footer Section------------------*/
+.footer {
+  background-color: white;
+  height: 100px;
+}
+.nav-items-footer a {
+  color: black;
+}
+.nav-items-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.nav-link-footer {
+  padding-left: 50px;
+  padding-top: 25px;
+  list-style: none;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+.copyright h3 {
+  margin-top: 5px;
+  font-size: 15px;
+}
+/*------------------End of Footer Section------------------*/
 
 /*--------------Viewport less than or equal to 750px----------------*/
 @media only screen and (max-width: 750px) {
@@ -302,6 +345,9 @@ h1 {
   }
   .title-button {
     margin-top: 20px;
+  }
+  .cards {
+    margin-top: 5px;
   }
 }
 /*--------------End Viewport less than or equal to 750px----------------*/
