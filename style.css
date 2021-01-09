@@ -184,13 +184,10 @@ h1 {
   padding-bottom: 25px;
   border-radius: 50px;
   background-color: white;
-  border: 5px solid crimson;
   float: left;
   transition: 0.5s ease;
 }
-.cards:hover {
-  border: 5px solid greenyellow;
-}
+
 .card-image {
   grid-area: image;
   background: url(./images/room-image.jpg);
@@ -349,6 +346,10 @@ h1 {
   .cards {
     margin-top: 5px;
   }
+  .copyright h3 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 }
 /*--------------End Viewport less than or equal to 750px----------------*/
 
@@ -382,4 +383,55 @@ h1 {
     top: 90%;
   }
 }
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  85% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
 /*------X-------Keyframing---------X------*/
+
+.gallery-main {
+  overflow: hidden;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+
+.gallery-main figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+.gallery-main figure img {
+  width: 20%;
+  float: left;
+  height: 600px;
+}
